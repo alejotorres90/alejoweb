@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pong/static/css/main.ebbb0bdf.chunk.css",
+    "main.js": "/pong/static/js/main.74da1594.chunk.js",
+    "main.js.map": "/pong/static/js/main.74da1594.chunk.js.map",
+    "runtime-main.js": "/pong/static/js/runtime-main.f7e4fe00.js",
+    "runtime-main.js.map": "/pong/static/js/runtime-main.f7e4fe00.js.map",
+    "static/js/2.6656aa4f.chunk.js": "/pong/static/js/2.6656aa4f.chunk.js",
+    "static/js/2.6656aa4f.chunk.js.map": "/pong/static/js/2.6656aa4f.chunk.js.map",
+    "index.html": "/pong/index.html",
+    "static/css/main.ebbb0bdf.chunk.css.map": "/pong/static/css/main.ebbb0bdf.chunk.css.map",
+    "static/js/2.6656aa4f.chunk.js.LICENSE.txt": "/pong/static/js/2.6656aa4f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7e4fe00.js",
+    "static/js/2.6656aa4f.chunk.js",
+    "static/css/main.ebbb0bdf.chunk.css",
+    "static/js/main.74da1594.chunk.js"
+  ]
+}

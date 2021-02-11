@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pic-to-gbcamera/static/css/main.33678905.chunk.css",
+    "main.js": "/pic-to-gbcamera/static/js/main.0ce1b1ce.chunk.js",
+    "main.js.map": "/pic-to-gbcamera/static/js/main.0ce1b1ce.chunk.js.map",
+    "runtime-main.js": "/pic-to-gbcamera/static/js/runtime-main.f0382479.js",
+    "runtime-main.js.map": "/pic-to-gbcamera/static/js/runtime-main.f0382479.js.map",
+    "static/js/2.44214a82.chunk.js": "/pic-to-gbcamera/static/js/2.44214a82.chunk.js",
+    "static/js/2.44214a82.chunk.js.map": "/pic-to-gbcamera/static/js/2.44214a82.chunk.js.map",
+    "index.html": "/pic-to-gbcamera/index.html",
+    "static/css/main.33678905.chunk.css.map": "/pic-to-gbcamera/static/css/main.33678905.chunk.css.map",
+    "static/js/2.44214a82.chunk.js.LICENSE.txt": "/pic-to-gbcamera/static/js/2.44214a82.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0382479.js",
+    "static/js/2.44214a82.chunk.js",
+    "static/css/main.33678905.chunk.css",
+    "static/js/main.0ce1b1ce.chunk.js"
+  ]
+}

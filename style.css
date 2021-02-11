@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+*::selection {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    padding-bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(220,220,220);
+}
+
+#header {
+    background: url(./img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    width: calc(100% - 50px);
+    min-height: calc(100vh - 50px);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header h1 {
+    font-weight: 100;
+    font-size: 78px;
+    color: white;
+    line-height: 62px;
+}
+
+#header p {
+    line-height: 42px;
+    font-weight: 100;
+    font-size: 47px;
+    color: rgb(150, 150, 150);
+}
+
+#header img {
+    margin-top: 25px;
+    max-width: 40%;
+    opacity: 0.5;
+}
+
+#header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-left: 2px;
+    justify-content: center;
+}
+
+#header-buttons button {
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    width: 177px;
+    height: 40px;
+    margin: 1px 1px 0 0;
+    padding-top: 2px;
+    transition: 0.4s ease-in-out;
+}
+
+#header-buttons button:hover {
+    background-color: white;
+    color: rgb(150,150,150);
+}
+
+#header-buttons button:focus, #header-buttons a:focus {
+    outline: none;
+}
+
+#technologies {
+    width: calc(100% - 50px);
+    min-height: 50vh;
+    padding: 8vh 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#technologies-inner > div {
+    margin: 15px;
+}
+
+#technologies-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#technologies h3 {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+#technologies > p {
+    font-size: 24px !important;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+#technologies .image-background {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+#technologies .image-background:hover {
+    transform: scale(1.07);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#technologies img {
+    width: 40px;
+    filter: invert(11%) sepia(25%) saturate(4%) hue-rotate(31deg) brightness(95%) contrast(102%);
+}
+
+#technologies p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#technologies-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+#technologies-bottom p {
+    margin: 45px 40px 0 40px;
+}
+
+#technologies-bottom img {
+    width: 238px;
+    opacity: 0.2;
+}
+
+hr {
+    margin: 0 5% 0 5%;
+    border-top: 1px solid rgba(25, 26, 25, 0.2);
+}
+
+#projects {
+    width: calc(100% - 25px);
+    min-height: 50vh;
+    padding: 8vh 12.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#projects h3 {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+#projects > p {
+    font-size: 24px !important;
+    margin-top: 12px;
+}
+
+.project {
+    margin: 12.5px;
+    width: calc(25% - 25px);
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project-text {
+    width: calc(100% - 50px);
+    height: calc(100% - 100px);
+    color: white;
+    padding: 50px 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(25, 26, 25, 0.8);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.project-text:hover {
+    opacity: 1;
+}
+
+.project-text h4{
+    font-size: 24px;
+}
+
+.project-text h5 {
+    color: rgb(150, 150, 150);
+    font-size: 20px;
+    line-height: 11px;
+}
+
+.project-text p {
+    transition: 0.6s ease-in-out;
+    margin: 15px 0 20px 0;
+}
+
+.project-text:hover p {
+    margin: 5px 0 10px 0;
+}
+
+#league-maker-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-text button {
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 150px;
+    height: 40px;
+    padding-top: 2px;
+    transition: 0.4s ease-in-out;
+    margin: 0.5px;
+}
+
+.project-text button:hover {
+    background-color: white;
+    color: #191a19;
+}
+
+.project-text button:focus {
+    outline: none;
+}
+
+#contact {
+    width: calc(100% - 50px);
+    min-height: 50vh;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h3 {
+    margin-bottom: 25px;
+    font-size: 42px;
+    color: #191a19;
+    font-weight: 300;
+}
+
+.contact-wrapper {
+    width: 238px;
+    opacity: 0.2;
+}
+
+#wrapper-up {
+    margin-left: -250px;
+    transform: scaleY(-1);
+}
+
+#wrapper-down {
+    margin-left: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+input, textarea {
+    margin: 1px;
+    height: 20px;
+    padding: 6px;
+    text-align: left;
+    border: none;
+    font-size: 16px;
+    outline-offset: 0px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid rgba(109, 110, 112, 0.5) !important;
+}
+
+#form-name-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form-name-container input {
+    min-width: 100px;
+    flex: 1;
+}
+
+textarea {
+    resize: none;
+    height: auto;
+}
+
+#form-submit {
+    margin: 1px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: transparent;
+    color: #191a19;
+    border: 1px solid #191a19;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+#form-submit:hover {
+    background-color: #191a19;
+    color: rgb(150,150,150);
+}
+
+#form-submit:focus {
+    outline: none;
+}
+
+#contact-modal {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    visibility: hidden;
+    z-index: 2000;
+    bottom: 0;
+    display: flex;
+}
+
+#contact-message-container {
+    margin: auto;
+}
+
+#contact-modal-icon {
+    width: 200px;
+}
+
+#contact-modal p {
+    margin-top: -25px;
+    color: white;
+}
+
+#social-media {
+    background-color: #191a19;
+    text-align: right;
+    margin: 0 !important;
+}
+
+#social-media button {
+    margin: 10px;
+    margin-left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.4s ease-in-out;
+    filter: invert(62%) sepia(0%) saturate(2718%) hue-rotate(160deg) brightness(97%) contrast(82%);
+}
+
+#social-media button:focus {
+    outline: none;
+}
+
+#social-media button:hover {
+    filter: invert(95%) sepia(0%) saturate(0%) hue-rotate(168deg) brightness(89%) contrast(87%);
+}
+
+#fb {
+    background-image: url(./img/facebook.svg);
+}
+
+#gh {
+    background-image: url(./img/github.svg);
+}
+
+#in {
+    background-image: url(./img/linkedin.svg);
+}
+
+@media (max-width: 1024px) {
+    .project {
+        width: calc(50% - 25px);
+    }
+}
+
+@media (max-width: 946px) {
+    #technologies-bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 605px) {
+    #header-buttons {
+        flex-direction: column;
+    }
+
+    .contact-wrapper {
+        display: none;
+    }
+    .project {
+        width: calc(100% - 25px);
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 60px !important;
+    }
+
+    h3 {
+        font-size: 32px !important;
+    }
+
+    .project-text h4{
+        font-size: 20px;
+    }
+    
+    .project-text h5 {
+        font-size: 16px;
+    }
+    
+    .project-text p {
+        font-size: 12px;
+    }
+
+    .project-text button {
+        font-size: 12px;
+        width: 75px;
+        height: 20px;
+        padding-top: 1px;
+    }
+
+}
+
+@media (hover: none){
+    #header-buttons button:hover, .project-text button:hover {
+        background-color: transparent;
+        color: white;
+    }
+
+    .project-text {
+        box-shadow: none;
+    }
+
+    .project-text {
+        opacity: 1;
+    }
+
+    #form-submit:hover {
+        background-color: transparent;
+        color: #191a19;
+    }
+}
